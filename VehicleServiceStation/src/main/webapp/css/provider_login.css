@@ -1,0 +1,124 @@
+@charset "ISO-8859-1";
+ 
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+ .content{
+ 	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(120deg ,#43ed7c , #0b507f, #7b0caa ,#e90808);
+    overflow: hidden;
+    height: calc(100vh-100px);
+	min-height: 85vh;	
+}
+
+main{
+	width: 500px;
+	padding: 80px;
+	border-radius: 20px;
+	border: 2px solid black;
+	background-color: white;
+	position: relative;
+}
+
+main header{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 10px 0;
+	background-color: transparent;
+	border-radius: 0 0 10px 10px;
+}
+
+.admin_form{
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+ 
+#input1, #password1{
+	padding: 10px;
+	border: 2px solid black;
+	width: 100%;
+	border-radius: 25px;
+	outline: none;
+	background-color: transparent;	
+		
+}
+
+.form_wrapper{
+	position: relative;
+	display: flex; 
+	align-items: center;
+}
+
+.invalid-feedback {
+  position: absolute;
+  bottom: -25px; 
+}
+
+#user1, #pass1{
+	position: absolute;
+	left: 15px;
+	color: black;
+	transition: .5s;
+}
+
+.adminid, .adminpass{
+	position: absolute;
+	right: 20px;
+	font-size: 20px !important;
+}
+
+.remember_box{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 18px;
+}
+
+.remember{
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	color: black;
+}
+
+#btn_1{
+	border: none;
+	padding: 10px;
+	border-radius: 25px;
+	cursor: pointer;
+	background-color: #0d85fe;
+}
+
+#input1:valid +label,
+#input1:focus +label {
+	background-color: white;
+	color: black;
+	transform: translate(10px, -20px);
+	padding: 2px 3px;
+	font-size: 10px;
+}
+
+#password1:valid +label,
+#password1:focus +label {
+	background-color: white;
+	color: black;
+	transform: translate(10px, -20px);
+	padding: 2px 3px;
+	font-size: 10px;
+}
+
+.new_account{
+	text-align: center;
+	color: black;
+}
+

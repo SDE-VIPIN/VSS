@@ -1,0 +1,130 @@
+<style> 
+
+.nav-item, .nav-link, .navbar-brand{
+	color: white;
+	font-family: sans-serif;
+	transition: color 0.06s;
+	display: inline-block;
+	
+}
+
+ .nav-item .nav-link:hover {
+  
+  border-radius: 15px;
+  background: #6D2932;
+  color: white;
+ }
+ 
+ .navbar, .nav-item, .dropdown, .nav-link {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #C7B7A3; 
+}
+
+
+</style>
+
+
+<!-- navbar code starts from here -->
+<nav class="navbar navbar-expand-lg" style="background-color: #561C24;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="/VehicleServiceStation/images/logo4.png" style="max-width: 50px; background-color: transparent; object-fit:contain; " alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/VehicleServiceStation/commonjsp/index.jsp"><i class="fas fa-home" style="color:white;"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/VehicleServiceStation/commonjsp/aboutus.jsp">About us</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/VehicleServiceStation/commonjsp/plan.jsp">Plan</a>
+        </li>
+        
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">
+            Guide
+          </a>
+          <ul class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+            <div class="row">
+              <div class="col-md-3">
+                <h5 class="mb-3">Car Maintenance Guides</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Car Accident Guide</a></li>
+                  <li><a href="#">Battery Guide</a></li>
+                  <li><a href="#">Fuel Saving Guide</a></li>
+                  <li><a href="#">General Maintenance Guide</a></li>
+                  <li><a href="#">Light and Sight Guide</a></li>
+                  <li><a href="#">Tyre Guide</a></li>
+                  <li><a href="#">Holiday Guide</a></li>
+                  <li><a href="#">Seasonal Guide</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h5 class="mb-3">Quick read</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">The Role of Underbody Protection in Monsoon Car Care</a></li>
+                  <li><a href="#">Understanding the Impact of Monsoon on Your Car's Electrical System</a></li>
+                  <li><a href="#">Advancement in Automation Safety Features of Car Braking System</a></li>
+                  <li><a href="#">Tips for Enhancing Visibility with Car Headlights During Rainy Days</a></li>
+                  <li><a href="#">Signs Your Car Muffler Needs Replacement</a></li>
+                  <li><a href="#">Comprehensive Guide to Maintain Your Car's Brakes During the Monsoon Season</a></li>
+                  <li><a href="#">Monsoon Car Care Expert Advice to Safeguard Your Vehicle in the Rainy Season</a></li>
+                  <li><a href="#">Powering Your Ride: The Art of Selecting the Ideal Car Battery</a></li>
+                </ul>
+              </div>
+              Add more columns with guides here
+            </div>
+          </ul>
+        </li> -->
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/VehicleServiceStation/commonjsp/contactus.jsp">Contact us</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/VehicleServiceStation/commonjsp/feedback.jsp">Feedback</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/VehicleServiceStation/commonjsp/view_feedback.jsp">Rating</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/VehicleServiceStation/commonjsp/view_provider.jsp">Our Providers</a>
+        </li>
+        
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li> -->
+        
+        <li class="nav-item dropdown">
+          <a class="btn btn-success" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Login
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/VehicleServiceStation/admin/admin_login.jsp">Admin</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/VehicleServiceStation/provider/provider_login.jsp">Service Provider</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/VehicleServiceStation/client/client_login.jsp">User</a></li>
+          </ul>
+        </li>
+         
+      </ul>
+      <form method="post" action="/VehicleServiceStation/commonjsp/search_provider.jsp" class="d-flex" role="search">
+        <div class="input-group">
+        <input class="form-control" type="search" name="city" placeholder="Enter city..." aria-label="Search">
+        <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
+      	</div>
+      </form>
+      
+    </div>
+  </div>
+</nav>
+
+<!-- navbar code ends here -->

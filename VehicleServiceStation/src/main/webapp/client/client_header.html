@@ -1,0 +1,91 @@
+<style> 
+
+.nav-item .nav-link, .navbar-brand{
+	color: white;
+	font-family: sans-serif;
+	transition: color 0.06s;
+	display: inline-block;
+	
+}
+
+ .nav-item .nav-link:hover {
+  
+  border-radius: 15px;
+  background: #6D2932;
+ }
+ 
+ .navbar .nav-item.dropdown .nav-link {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #C7B7A3; 
+}
+
+
+</style>
+
+
+<!-- navbar code starts from here -->
+<nav class="navbar navbar-expand-lg" style="background-color: #561C24;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="/VehicleServiceStation/images/logo4.png" style="max-width: 50px; background-color: transparent; object-fit:contain; " alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0" style="max-width: 350px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/VehicleServiceStation/client/client_home.jsp"><i class="fas fa-home" style="color:white;"></i></a>
+        </li>
+        
+        
+        
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            View
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/VehicleServiceStation/client/client_profile.jsp">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/VehicleServiceStation/client/pending_booking.jsp">Edit</a></li>
+          </ul>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="/VehicleServiceStation/client/client_edit_profile.jsp">Edit</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Booking Status
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/VehicleServiceStation/client/booking_response.jsp">Confirmed</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/VehicleServiceStation/client/pending_booking.jsp">Pending</a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/VehicleServiceStation/client/view_provider.jsp">Book Services</a>
+        </li>
+      </ul>
+      
+       <form class="d-flex mx-auto align-items-center" method="post" action="/VehicleServiceStation/client/search_provider.jsp" role="search">
+        <div class="input-group">
+          <input class="form-control" style="width: 400px;" type="search" name="city" placeholder="Enter city..." aria-label="Search">
+          <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
+        </div>
+      </form>
+      
+      
+<ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+    <a class="btn btn-success" role="button" href="/VehicleServiceStation/Client_Logout">Log out</a>
+    </li>
+    </ul>
+  </div>
+    </div>
+</nav>
+
+<!-- navbar code ends here -->

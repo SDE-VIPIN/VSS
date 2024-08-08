@@ -1,0 +1,127 @@
+<style> 
+
+.nav-item .nav-link, .navbar-brand{
+	color: white;
+	font-family: sans-serif;
+	transition: color 0.06s;
+	display: inline-block;
+	
+}
+
+ .nav-item .nav-link:hover {
+  
+  border-radius: 15px;
+  background: #6D2932;
+ }
+ 
+ .navbar .nav-item.dropdown .nav-link {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #C7B7A3; 
+}
+
+
+</style>
+
+
+<!-- navbar code starts from here -->
+<nav class="navbar navbar-expand-md" style="background-color: #561c24;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="/VehicleServiceStation/images/logo4.png" style="max-width: 50px; background-color: transparent; object-fit:contain; " alt="Logo"></a>
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/VehicleServiceStation/admin/admin_home.jsp"><i class="fas fa-home" style="color:white;"></i></a>
+        </li>
+      
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            View
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/VehicleServiceStation/admin/view_contacts.jsp">Contacts</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/VehicleServiceStation/admin/view_feedbacks.jsp">Feedbacks</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/VehicleServiceStation/admin/view_provider.jsp">Providers</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/VehicleServiceStation/admin/view_offer.jsp">Offer</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/VehicleServiceStation/admin/view_client.jsp">User</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/VehicleServiceStation/admin/admin_profile.jsp">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/VehicleServiceStation/admin/admin_edit_profile.jsp">Edit</a></li>
+            
+          </ul>
+        </li>
+        
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            News
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/VehicleServiceStation/admin/add_news.jsp">Add</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/VehicleServiceStation/admin/view_news.jsp">View</a></li>            
+          </ul>
+        </li> -->
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Provider
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/VehicleServiceStation/admin/new_provider.jsp">New</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/VehicleServiceStation/admin/view_provider.jsp">Verified</a></li>            
+          </ul>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Plans
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/VehicleServiceStation/admin/add_plan.jsp">Add</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/VehicleServiceStation/admin/view_plan.jsp">View</a></li>            
+          </ul>
+        </li> 
+      </ul>
+    </div>
+    
+    <div class="mx-auto navbar-collapse">
+    <form class="d-flex align-items-center" method="post" action="/VehicleServiceStation/admin/search_provider.jsp" role="search">
+        <div class="input-group">
+          <input class="form-control" style="width: 400px;" type="search" name="city" placeholder="Enter city..." aria-label="Search">
+          <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
+        </div>
+      </form>
+    </div>
+    
+    <!-- <div class="mx-auto navbar-collapse">
+      <form class="form-inline" method="post" action="/VehicleServiceStation/admin/search_provider.jsp" role="search">
+        <div class="input-group">
+        <input class="form-control navbar-expand-md"  style="width: 600px;" type="search" placeholder="Enter city..." aria-label="Search">
+        <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
+      
+</div>
+</form>
+</div> -->
+
+<ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+    <a class="btn btn-success" role="button" href="/VehicleServiceStation/Provider_Logout">Log out</a>
+    </li>
+    </ul>
+
+</div>
+</nav>
+
+<!-- navbar code ends here -->
